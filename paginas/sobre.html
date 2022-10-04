@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <style>
+body {
+  margin: 0;
+}
+  </style>
+</head>
+
+<body>
+
+    <!-- barra de menu no topo da tela -->
+    <div class="topbar" id="computador">
+    <a href="../index.html" class="testefont">Home</a>
+    <a href="novidades.html">Novidades</a>
+    <a href="materias.html">Matérias</a>
+    <a href="review.html">Reviews</a>
+    <a href="jogos.html">Jogos</a>
+    <a href="lancamentos.html">Lançamentos</a>
+    <a class="active" href="sobre.html">Sobre</a>
+  </div>
+
+        <!-- menu lateral para celular -->
+  <div id="mySidenav" class="sidenav" id="celular">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../index.html">Home</a>
+    <a href="novidades.html">Novidades</a>
+    <a href="materias.html">Materias</a>
+    <a href="review.html">Reviews</a>
+    <a href="jogos.html">Jogos</a>
+    <a href="lancamentos.html">Lançamentos</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+
+  <span class="sidenavstyle2" onclick="openNav()" id="celular">&#9776</span>
+
+  <br>
+  <img src="../imagens/logoicone.png" alt="" class="logosobre">
+
+  <div class="materia">
+       <img src="../imagens/asarmas2.png" alt="" class="titulosobre">
+
+    <p class="textomateria"> Fazemos parte de um grupo sem fins lucrativos chamado "Arme um bárbaro". Uma organização não governamental que 
+      visa armar bárbaros que se encontram necessitando de um machado afiado ou uma lâmina confiável e com isso incentivando a amigável 
+      prática da pilhagem e saques, tão comum e cultural entre os bárbaros.
+      <br>
+      <br>
+      Caso esteja interessado em auxiliar, mandar uma mensagem de apoio e até mesmo virar um membro deste grupo basta enviar uma mensagem usando os meios logo abaixo!
+      <br>
+      <br>
+      Junte-se à horda!</p>
+  </div>
+
+<div class="formulario">
+  <h1> Entre em contato </h1>
+  <form name="formbarbaro" onsubmit="return validarForm()">
+      <fieldset>
+          <p>
+              <label for="nome"> Nome: </label>
+              <input type="text" name="nome" id="nome" />
+              <span id="msgErroNome"></span>
+          </p>
+
+          <p>
+              <label> Opções: </label>
+              <br />
+              <input type="checkbox" name="barbaro" id="barbaro" value="sim" />
+              <label for="barbaro"> Você é um bárbaro? </label>
+              <br />
+              <input type="checkbox" name="pilhar" id="pilhar" value="sim" />
+              <label for="pilhar"> Já participou de algum saque ou pilhagem? </label>
+              <br />
+              <input type="checkbox" name="termos" id="termos" value="sim" />
+              <label for="termos"> Concordo com os termos de uso do site </label>
+          </p>
+
+          <p>
+              <label for="arma"> Qual é a sua arma de escolha?: </label>
+              <select name="arma" id="arma">
+                  <option value=""> Escolha uma arma </option>
+                  <option value="machado"> Machado </option>
+                  <option value="machado2h"> Machado de duas mãos </option>
+                  <option value="machadoarr"> Machado de arremesso </option>
+                  <option value="machadomaisum"> Mais um machado </option>
+              </select>
+          </p>
+
+            <label for="arma"> Deixe uma mensagem: </label>
+            <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+          <p>
+              <input type="reset" name="botaoLimpar" id="limpa" value="Limpar Dados" />
+              <input type="submit" name="botaoEnviar" value="Enviar" />
+          </p>
+      </fieldset>
+  </form>
+</div>
+
+
+
+
+
+  <script defer src="../js/script.js"></script>
+
+</body>
+
+</html>

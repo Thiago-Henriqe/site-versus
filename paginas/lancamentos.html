@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+<link rel="stylesheet" href="../css/estilo.css">
+<style>
+  body {
+  margin: 0;
+}
+ 
+</style>
+</head>
+<body>
+
+      <!-- barra de menu no topo da tela -->
+      <div class="topbar" id="computador">
+    <a href="../index.html" class="testefont">Home</a>
+    <a href="novidades.html">Novidades</a>
+    <a href="materias.html">Matérias</a>
+    <a href="review.html">Reviews</a>
+    <a href="jogos.html">Jogos</a>
+    <a class="active" href="lancamentos.html">Lançamentos</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+
+        <!-- menu lateral para celular -->
+  <div id="mySidenav" class="sidenav" id="celular">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../index.html">Home</a>
+    <a href="novidades.html">Novidades</a>
+    <a href="materias.html">Materias</a>
+    <a href="review.html">Reviews</a>
+    <a href="jogos.html">Jogos</a>
+    <a href="lancamentos.html">Lançamentos</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+
+  <span class="sidenavstyle2" onclick="openNav()" id="celular">&#9776</span>
+  
+         <!-- slideshow com noticias rodando e com as figuras mapeadas com links para as materias -->
+         <div class="slideshow-container" id="computador">
+
+          <div class="mySlides fade">
+            <img src="../imagens/folhetoslide1.png" usemap="#folheto1" class="slidestamanho" >
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="../imagens/folhetoslide2.png" usemap="#folheto2" class="slidestamanho" >
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="../imagens/folhetoslide3.png" usemap="#folheto3" class="slidestamanho" >
+          </div>
+      
+          <div class="mySlides fade">
+            <img src="../imagens/folhetoslide4.png" usemap="#folheto4" class="slidestamanho" >
+          </div>
+        </div>
+      
+        <div class="slideshow-container2" id="celular">
+      
+          <div class="mySlides2 fade">
+            <img src="../imagens/folhetoslide1B.png" class="slidestamanho" >
+          </div>
+        
+          <div class="mySlides2 fade">
+            <img src="../imagens/folhetoslide2B.png" class="slidestamanho" >
+          </div>
+          
+          <div class="mySlides2 fade">
+            <img src="../imagens/folhetoslide3B.png" class="slidestamanho" >
+          </div>
+      
+          <div class="mySlides2 fade">
+            <img src="../imagens/folhetoslide4B.png" class="slidestamanho" >
+          </div>
+        </div>
+      
+        <br>
+          
+              <!-- marcadores dos slides -->
+          <div style="text-align:center" id="computador">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+      
+                  <!-- marcadores dos slides -->
+                  <div class="divdot2" id="celular">
+                    <span class="dot2"></span> 
+                    <span class="dot2"></span> 
+                    <span class="dot2"></span> 
+                    <span class="dot2"></span> 
+                  </div>
+  
+      <!-- mapeamento dos folhetos que fazem parte dos slides -->
+      <map name="folheto1">
+        <area shape="rect" coords="0, 0, 320, 500" alt="Computer" href="materiascultofthelambummilhao.html">
+        <area shape="rect" coords="352, 0, 668, 500" alt="Computer" href="materiasdiabloivsempaytowin.html">
+        <area shape="rect" coords="703, 0, 1020, 500" alt="Computer" href="lancamentosgowragnarok.html">
+      </map>
+  
+      <map name="folheto2">
+        <area shape="rect" coords="0, 0, 320, 500" alt="Computer" href="materiasdiabloivsempaytowin.html">
+        <area shape="rect" coords="352, 0, 668, 500" alt="Computer" href="lancamentosgowragnarok.html">
+        <area shape="rect" coords="703, 0, 1020, 500" alt="Computer" href="novidadeswoworetornodorei.html">
+      </map>
+  
+      <map name="folheto3">
+        <area shape="rect" coords="0, 0, 320, 500" alt="Computer" href="lancamentosgowragnarok.html">
+        <area shape="rect" coords="352, 0, 668, 500" alt="Computer" href="novidadeswoworetornodorei.html">
+        <area shape="rect" coords="703, 0, 1020, 500" alt="Computer" href="materiascultofthelambummilhao.html">
+      </map>
+  
+      <map name="folheto4">
+        <area shape="rect" coords="0, 0, 320, 500" alt="Computer" href="novidadeswoworetornodorei.html">
+        <area shape="rect" coords="352, 0, 668, 500" alt="Computer" href="materiascultofthelambummilhao.html">
+        <area shape="rect" coords="703, 0, 1020, 500" alt="Computer" href="materiasdiabloivsempaytowin.html">
+      </map>
+  
+  <!-- linha divisoria entre materias -->  
+      <img src="../imagens/line.png" alt="" class="linha">
+
+      <!-- banner com link que leva para a materia --> 
+      <a href="lancamentosgowragnarok.html" class="bannernoticia"><img src="../imagens/lancamentogowragnarok.png" alt=""  class="imagemnoticia"></a>
+  
+
+
+<script defer src="../js/script.js"></script>
+
+</body>
+</html>
